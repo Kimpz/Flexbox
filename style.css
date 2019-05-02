@@ -1,0 +1,192 @@
+/*General CSS*/
+/*Rem ancestor of font size 1rem=16px*/
+
+body{
+	background-color:#dff9fb;
+	/*background:linear-gradient(to right,rgba(0, 90, 167,2),rgba(255, 253, 228,1));*/
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+nav{	
+	background-color: #dff9fb;
+	/*background:linear-gradient(to right,rgba(0, 90, 167,2),rgba(255, 253, 228,.5));*/
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+
+}
+
+nav #nav-list{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+
+nav ul li{
+	padding:16px;
+	text-align: center;
+	transition: background-color 0.3s, padding 0.8s linear;
+}
+
+nav ul li:hover{
+	background-color:#17c0eb; 
+	cursor: pointer;
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	color: #005aa7;
+	font-size: 18px;
+}
+
+#main {
+	/*background-image:url(bg/bg2.jpg);*/
+	background:linear-gradient(to bottom,rgba(0, 90, 167,2),rgba(255, 253, 228,.05)), url(bg2.jpg);
+	min-height: 500px;
+	background-size: cover;
+	padding-top: 200px;
+	text-align: center;
+	flex-direction: column;
+	flex-direction: center;
+	align-items: center;
+	display: flex;
+	color: white;
+	margin-bottom: 50px;
+
+}
+
+#main h1{
+	margin: 0px;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+#main p{
+	width: 50%;
+	text-align: center;
+
+}
+
+/*Flexbox codes*/
+#testimonials {
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap; /*Image to be responsive & remove overflow*/
+	padding-bottom: 50px;
+}
+
+/*box shadows and transitions*/
+.customer{
+	border:5px solid black;
+	border-radius: 100px;
+	margin-right: 20px;
+	box-shadow:8px 13px 8px; 
+	margin:30px;
+	tansistion: transform 0.3s;
+	font-size: 20px;
+}
+
+.customer:hover{
+	box-shadow: 0px 0px 25px red;
+	transform: translate(20px, 20px);
+}
+
+#showcase{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+.cards{
+	max-width: 250px;
+	display: flex;
+	flex-direction: column;
+	margin:10px;
+	box-shadow: 0px 0px 5px;
+	padding: 10px;
+	background-color: #4bcffa;
+	border-radius: 10px;
+
+	 
+}
+
+.cards .card-img{
+	height: 200px;
+
+}
+
+.cards .card-img img{
+	height: 100%;
+	min-width: 100%;
+	max-width: 150px;
+}
+
+.cards:hover{
+	box-shadow: 0px 2px 40px black;
+	transform: scale(1.2);
+	
+}
+
+.cards .card-desc{
+	padding:10px;
+	margin-bottom: 20px;
+}
+
+.cards .button{
+	margin:10px;
+
+
+}
+
+.cards .button a{
+	padding:10px;
+	color: black;
+	background-color:#b8e994;
+	border:1px solid black;
+	border-radius: 100px;
+}
+
+.cards .button a:hover{
+	transform: scale(1.2);
+	background-color:#4cd137; 
+}
+
+footer{
+	background-color: #45aaf2;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer a {
+		padding:20px;
+}
+
+#media-icons ul{
+	display: flex;
+	list-style-type: none;
+	padding: 20px;
+
+
+}
+
+
+
+
+/*Code for responsive website*/
+@media screen and (min-width: 700px)
+{
+	nav ul{
+		text-align: right;
+	}
+	nav ul li{
+		display: inline-block;
+		text-align: left;	
+	}
+
+}
